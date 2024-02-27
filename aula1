@@ -13,7 +13,7 @@ void loop()
 {
 	valorSensor = analogRead(pinoSensor); //leitura da entrada analogica A0
   	voltagem = valorSensor * (5.0 / 1024) // caluclulo da tensao
-    serial.print("tensão do potenciometro: "); //imprime no monitor serial
+    	Serial.print("tensão do potenciometro: "); //imprime no monitor serial
   	Serial.printIn(voltagem); // imprime a tensao
   	serial.print("valor: "); //imprime no monitor serial
   	Serial.printIn(valorSensor); //imprime o valor
